@@ -6,8 +6,7 @@
 ## **Table of Contents**  
 1. [**Overview & Quick Start**](#overview--quick-start)  
 2. [**Extensive IAM Documentation**](#extensive-iam-documentation) *(Bash Script Deep Dive)*  
-3. [**Detailed Documentation**](#detailed-documentation) *(Link TBD)*  
-4. [**Troubleshooting & FAQs**](#troubleshooting--faqs)  
+3. [**Troubleshooting & FAQs**](#troubleshooting--faqs)  
 
 ---
 
@@ -104,7 +103,7 @@ curl -X POST -F "csv_file=@users.csv" http://34.252.60.35:8080/upload/
 ```  
 *(Use real emails to receive workspace links!)*  
 
-## **2. Extensive IAM Documentation**  
+## **Extensive IAM Documentation**  
 ### **Bash Script (`Iam_setup.sh`) Deep Dive**  
 #### **Core Functionality**  
 - Creates local users from a CSV.  
@@ -182,12 +181,9 @@ sudo ./Iam_setup.sh admin@example.com custom_users.csv
 
 ---
 
-## **3. Detailed Documentation**  
-*(Keep your existing placeholder for future GitHub/wiki links.)*  
 
----
 
-## **4. Troubleshooting & FAQs**  
+## **Troubleshooting & FAQs**  
 ### **IAM-Specific Issues**  
 ❌ **"Input file not found"**  
 - Ensure `users.csv` exists or specify a path:  
