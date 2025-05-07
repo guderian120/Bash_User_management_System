@@ -34,7 +34,7 @@ def send_email_to_admin(log_file_path, to_email): # send log file to admin
 
 def send_email(to_email, name, username, user_password): # send user account details
     
-    subject = "[IAM Setup] User Account Created"
+    subject = f"{username} User Account Created"
     body_text = f"Hello {to_email},\n\nYour account has been created. Please change your password upon first login.\n\nRegards,\nIAM Admin"
 
     # Set up the MIME
