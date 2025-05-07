@@ -12,7 +12,7 @@
 
 ## Overview & Quick Start 
 
-![Demo](./media/iam_setup_video.gif)  
+![Demo](media/iam_setup_video.gif)  
 
 
 ### **Choose Your Workflow**  
