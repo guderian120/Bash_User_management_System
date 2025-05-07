@@ -12,7 +12,7 @@
 
 ## Overview & Quick Start 
 
-![Demo](/media/iam_setup.gig)
+![Demo](/media/iam_setup.gif)
 
 ### **Choose Your Workflow**  
 This project offers **three independent tools** for user management:  
