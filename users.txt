@@ -1,0 +1,4 @@
+username, full name, department,email
+jdoe,John Doe,engineering,realamponsah10@yahoo.com
+asmith,Alice Smith,engineering
+mjones,Mike Jones,engineering
