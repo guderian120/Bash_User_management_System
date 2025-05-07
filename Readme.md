@@ -1,14 +1,12 @@
 # **User Management System (UMS) - Unified Documentation**  
 **Three Independent Tools for User Management**  
 
----
 
 ## **Table of Contents**  
 1. [**Overview & Quick Start**](#overview--quick-start)  
 2. [**Extensive IAM Documentation**](#extensive-iam-documentation) *(Bash Script Deep Dive)*  
 3. [**Troubleshooting & FAQs**](#troubleshooting--faqs)  
 
----
 
 ## Overview & Quick Start 
 
