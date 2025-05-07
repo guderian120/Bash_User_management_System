@@ -108,7 +108,7 @@ python3 gui_sys_management.py
 ```bash
 curl -X POST -F "csv_file=@users.csv" http://34.252.60.35:8080/upload/
 ```  
-*(Use real emails to receive workspace links!)*  
+*(Use real emails to receive workspace links, Check your spam if email not received!)*  
 
 ## **Extensive IAM Documentation**  
 ### **Bash Script (`Iam_setup.sh`) Deep Dive**  
