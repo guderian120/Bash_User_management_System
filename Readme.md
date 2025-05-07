@@ -20,11 +20,16 @@
 ### **Choose Your Workflow**  
 This project offers **three independent tools** for user management:  
 
-| Tool | Use Case | Workspace Provisioning |  
-|------|----------|-----------------------|  
-| **Django API** | Live CSV upload + automated emails | ✅ Yes (WeTTY terminal) |  
-| **Bash Script** | Local user creation + log emails | ❌ No (Local users only) |  
-| **Python GUI** | Graphical local user management | ❌ No (Local users only) |  
+
+## 📚 Resources Table
+
+| Tool            | Use Case                           | Workspace Provisioning  | GitHub Link(s)                                                                        |
+| --------------- | ---------------------------------- | ----------------------- | ------------------------------------------------------------------------------------- |
+| **Django API**  | Live CSV upload + automated emails | ✅ Yes (WeTTY terminal)  | [Django Workspace System](https://github.com/guderian120/workspace-system-management) |
+| **Bash Script** | Local user creation + log emails   | ❌ No (Local users only) | *N/A*                                                                                 |
+| **Python GUI**  | Graphical local user management    | ❌ No (Local users only) | [PyQt5 SysMan](https://github.com/guderian120/PyQt5-SysMan)                           |
+
+
 
 ---
 
@@ -93,11 +98,7 @@ python3 gui_sys_management.py
 
 ---
 
-## **4. What’s Next?**  
-- **Full Documentation** (Architecture, API specs, screenshots) → *[GitHub Wiki Link TBD]*  
-- **Security hardening** (OAuth, encrypted sudo storage).  
 
----
 
 **🚀 Ready to Deploy?**  
 - Need **live workspaces?** → Use the Django API.  
