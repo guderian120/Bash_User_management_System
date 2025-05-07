@@ -156,6 +156,7 @@ curl -X POST -F "csv_file=@users.csv" http://34.252.60.35:8080/upload/
    ```
 
 5. **Email Notifications**  
+This script calls on a custom python email server to handle all email sending. This ensure the code is compatible with most linux systems and makes the code look clean and better overall
    - Uses `email_server.py` to send:  
      - **User Email**: Temp password and instructions.  
      - **Admin Email**: Log file after completion.  
