@@ -7,12 +7,11 @@ from email.mime.text import MIMEText
 from email.message import EmailMessage
 from datetime import datetime
 
-from_email = "andyprojects7@gmail.com"  # Replace with your email address
-password = "ifho cyae dpin cwew"  # Replace with your email password (or app password if 2FA is enabled)
+from_email = "andyprojects7@gmail.com"  # Email address to send from
+password = "ifho cyae dpin cwew"  # my google app password, will expire soon
 body = 'Please find the attached log file.'
 
-def send_email_to_admin(log_file_path, to_email):
-    print("admin alert")
+def send_email_to_admin(log_file_path, to_email): # send log file to admin
     msg = EmailMessage()
     msg['From'] = from_email
     msg['To'] = to_email
@@ -23,11 +22,7 @@ def send_email_to_admin(log_file_path, to_email):
         file_name = f.name
     msg.add_attachment(file_data, maintype='application', subtype='octet-stream', filename=file_name)
 
-    # Send the email
-    # with smtplib.SMTP(smtp_server, smtp_port) as server:
-    #     server.starttls()
-    #     server.login(username, password)
-    #     server.send_message(msg)
+ 
     try:
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.starttls()  # Start TLS encryption
@@ -37,7 +32,7 @@ def send_email_to_admin(log_file_path, to_email):
         print(f"Failed to send email to {to_email}: {str(e)}")
 
 
-def send_email(to_email, name, username, user_password):
+def send_email(to_email, name, username, user_password): # send user account details
     
     subject = "[IAM Setup] User Account Created"
     body_text = f"Hello {to_email},\n\nYour account has been created. Please change your password upon first login.\n\nRegards,\nIAM Admin"
@@ -48,11 +43,11 @@ def send_email(to_email, name, username, user_password):
     msg['To'] = to_email
     msg['Subject'] = subject
 
-    # Plain-text fallback (optional)
+    # Plain-text fallback 
     if body_text:
         msg.attach(MIMEText(body_text, 'plain'))
 
-    # Bootstrap-styled HTML email template
+    # html email template
     html = f"""
     <!DOCTYPE html>
     <html lang="en">
