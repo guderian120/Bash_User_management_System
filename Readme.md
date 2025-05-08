@@ -18,7 +18,7 @@
 
 
 ### **Choose Your Workflow**  
-This project offers **three independent tools** for user management:  
+This project offers **three independent tools** for user management, Each tool autmates the process of creating users, groups and home directories as well as email login credentials to users and log files to System Administrators:  
 
 
 ## 📚 Resources Table
@@ -26,7 +26,7 @@ This project offers **three independent tools** for user management:
 | Tool            | Use Case                           | Workspace Provisioning  | GitHub Link(s)                                                                        |
 | --------------- | ---------------------------------- | ----------------------- | ------------------------------------------------------------------------------------- |
 | **Django API**  | Live CSV upload + automated emails | ✅ Yes (WeTTY terminal)  | [Django Workspace System](https://github.com/guderian120/workspace-system-management) |
-| **Bash Script** | Local user creation + log emails   | ❌ No (Local users only) | *N/A*                                                                                 |
+| **Bash Script** | Local user creation + log emails   | ❌ No (Local users only) | This Repo                                                                                |
 | **Python GUI**  | Graphical local user management    | ❌ No (Local users only) | [PyQt5 SysMan](https://github.com/guderian120/PyQt5-SysMan)                           |
 
 
