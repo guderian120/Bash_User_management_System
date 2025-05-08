@@ -88,6 +88,7 @@ python3 gui_sys_management.py
 - **Bash/Python**: Supports flexible formats but requires valid emails.  
 
 ### **❌ No workspace link received?**  
+- Check your Spam folder **Django API** Emails are sometimes moved to the spam 
 - Only the **Django API** provisions workspaces. Bash/Python are for **local users only**.  
 
 ### **❌ GUI not launching?**  
