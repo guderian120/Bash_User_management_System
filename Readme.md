@@ -200,8 +200,9 @@ sudo ./Iam_setup.sh admin@example.com custom_users.csv
   sudo ./Iam_setup.sh admin@example.com /path/to/users.csv
   ```
 
-❌ **SMTP Errors in `email_server.py`**  
-- Replace the hardcoded Gmail credentials with a valid **App Password**.  
+❌ **Admin Email Errors**  
+- This Script requires an**Administrator_Email** as an argument. Log files are sent to this user after script is run.  
+- sudo ./Iam_setup.sh admin@example.com
 
 ❌ **Password Complexity Failures**  
 - Verify `/etc/security/pwquality.conf` matches the required rules.  
