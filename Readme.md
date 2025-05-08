@@ -203,7 +203,7 @@ sudo ./Iam_setup.sh admin@example.com custom_users.csv
 ❌ **Admin Email Errors**  
 - This Script requires an **Administrator_Email** as an argument. Log files are sent to this user after script is run.  
 ```bash
-- sudo ./Iam_setup.sh admin@example.com
+sudo ./Iam_setup.sh admin@example.com
 ```
 
 ❌ **Password Complexity Failures**  
