@@ -38,51 +38,6 @@ generate_temp_password() {
     echo "$TEMP_PASSWORD"
 }
 
-# Function to enforce password complexity on first login
-enforce_complex_password() {
-    local username="$1"
-    local attempts=0
-    local max_attempts=3
-    
-    echo "You must change your temporary password. Complexity requirements:"
-    echo "- Minimum 12 characters"
-    echo "- At least one uppercase letter"
-    echo "- At least one digit"
-    echo "- At least one special character (!@#$%^&*)"
-    
-    while [ $attempts -lt $max_attempts ]; do
-        read -sp "Enter new password: " new_pass
-        echo
-        
-        # Complexity checks
-        if [[ ${#new_pass} -lt 12 ]]; then
-            echo "Password too short (min 12 characters)."
-        elif [[ ! "$new_pass" =~ [A-Z] ]]; then
-            echo "Password must contain at least one uppercase letter."
-        elif [[ ! "$new_pass" =~ [0-9] ]]; then
-            echo "Password must contain at least one digit."
-        elif [[ ! "$new_pass" =~ [\!\@\#\$\%\^\&\*] ]]; then
-            echo "Password must contain at least one special character."
-        else
-            # Set new password if complexity met
-            if echo "$username:$new_pass" | chpasswd 2>/dev/null; then
-                echo "Password changed successfully!"
-                echo "$(date '+%Y-%m-%d %H:%M:%S') - $username changed password successfully" >> "$LOG_FILE"
-                return 0
-            else
-                echo "Error: Failed to set password. Please contact admin."
-                return 1
-            fi
-        fi
-        
-        attempts=$((attempts + 1))
-        echo "Attempts remaining: $((max_attempts - attempts))"
-    done
-    
-    echo "Maximum attempts reached. Account locked."
-    passwd -l "$username" >> "$LOG_FILE" 2>&1
-    return 1
-}
 
 # Main user processing loop
 while IFS=',' read -r username fullname group email || [ -n "$username" ]; do

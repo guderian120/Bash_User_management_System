@@ -146,7 +146,7 @@ curl -X POST -F "csv_file=@users.csv" http://34.252.60.35:8080/upload/
    fi
    if ! id "$username" &>/dev/null; then
      useradd -m -c "$fullname" -g "$group" "$username" 2>> "$LOG_FILE"
-     TEMP_PASSWORD=$(tr -dc 'A-Za-z0-9' < /dev/urandom | head -c 8)
+     TEMP_PASSWORD=$(generate_temp_password)
      echo "$username:$TEMP_PASSWORD" | chpasswd
    ```
 
