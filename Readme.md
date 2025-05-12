@@ -5,7 +5,7 @@
 
 ## **Table of Contents**  
 1. [**Overview & Quick Start**](#overview--quick-start)  
-2. [**Extensive IAM Documentation**](#extensive-iam-documentation) *(Bash Script Deep Dive)*  
+2. [**Extensive BASH DOCUMENTATION**](#extensive-iam-documentation) *(Bash Script Deep Dive)*  
 3. [**Troubleshooting & FAQs**](#troubleshooting--faqs)  
 
 > ⚠️ This project is intended to run on **Linux systems only** (preferably Ubuntu) and assumes the executing environment has appropriate privileges (sudo access).
