@@ -37,7 +37,8 @@ This project offers **three independent tools** for user management, Each tool a
 **Use this if:**  
 - You need **automated workspace provisioning** (WeTTY terminal).  
 - Users should receive **email links** to access their accounts.  
-
+## Sample Email
+![Sample Email](media/email.png)
 #### **Steps:**  
 1. **Upload CSV** (Strict format required):  
    ```bash
@@ -113,6 +114,13 @@ curl -X POST -F "csv_file=@users.csv" http://34.252.60.35:8080/upload/
 
 ## **Extensive IAM Documentation**  
 ### **Bash Script (`Iam_setup.sh`) Deep Dive**  
+### **CSV Sample File**  
+![CSV Screenshot](media/csv.png)
+
+### **Script Execution **  
+![Script  Exec](media/script_exec.png)
+
+
 #### **Core Functionality**  
 - Creates local users from a CSV.  
 - Emails temporary passwords to users and logs to an admin.  

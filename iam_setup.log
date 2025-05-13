@@ -1,0 +1,13 @@
+==== IAM Setup Log - 2025-05-08 14:39:42 ====
+Script version: 2.1 (Complexity on first login)
+2025-05-08 14:39:42 - Processing user: jdoe
+2025-05-08 14:39:42 - Group 'engineering' created.
+2025-05-08 14:39:42 - User 'jdoe' created. Temp password: hM8wQ3Eh
+2025-05-08 14:39:45 - Email sent to realandyamponsah10@gmail.com
+2025-05-08 14:39:45 - Processing user: asmith
+2025-05-08 14:39:46 - User 'asmith' created. Temp password: jTVxl2kf
+2025-05-08 14:39:48 - Email sent to realamponsah10@yahoo.com
+2025-05-08 14:39:48 - Processing user: mjones
+2025-05-08 14:39:48 - User 'mjones' created. Temp password: UfSWV3qX
+==== Setup Completed - 2025-05-08 14:39:48 ====
+2025-05-08 14:39:51 - Logs  sent to Admin
